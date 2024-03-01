@@ -38,7 +38,7 @@
             
             <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /></a>
             
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar"class="navbar=nav">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
@@ -74,8 +74,8 @@
             </div>
             <div class="col-sm-6">
                 <div class="card">
-                    <h3 class="card-reader bg-primary text-white"> Facts At a Glance</h3>
-                    <div class-="card-body">
+                    <h3 class="card-header bg-primary text-white"> Facts At a Glance</h3>
+                    <div class="card-body">
                         <dl class="row">
                             <dt class="col-6">Foundeded</dt>
                             <dd class="col-6">February 3, 2016</dd>
@@ -106,21 +106,65 @@
         <section class="row row-content">
             <div class="col">
                 <h3>Community Partners</h3>
-                <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
-                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
-                <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
-                <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other adventurers!</p>
-                <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
-                <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
-                <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
-                <p class="d-none d-sm">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.</p>
+            <div id="accordionExample" class="accordion">
+                <div class="accordion-item">
+                    <h4 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bootstrap">
+                            Bootstrap Outfitters
+                        </button>
+                    </h4>
+                    <div id="bootstrap" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body d-none d-sm-block">
+                            <p>Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
+                        </div>
+                    </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#git">
+                                    Git Out Expeditions
+                                </button>
+                            </h4>
+                            <div id="git" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body d-none d-sm-block">
+                                    <p>Join Git Out Expeditions to explore new horizons with a group of other adventures!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" type="button" data-bs-toggle="collapse" data-bs-target="#mongo">
+                                    Mongo Fly Shop
+                                </button>
+                            </h4>
+                            <div id="mongo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body d-none d-sm-block">
+                                    <p>Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="acoordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#node">
+                                    Node Outdoor Apparel
+                                </button>
+                            </h4>
+                            <div id="node" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body d-none d-sm-block">
+                                    <p>From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </section>
+
         <section class="row row-content">
             <div class="col-sm-9">
                 <h2>Facts & Figures</h2>
                 <div class="table-responsive">
-                    <table class="table table-primary  table-striped bg-primary text-light">
+                    <table class="table table-primary table-striped bg-primary text-light">
                         <thead>
                             <tr>
                                 <th></th>
